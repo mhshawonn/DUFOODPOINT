@@ -1,0 +1,127 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Signup Container */
+  .signup-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #fafafa;
+  }
+  
+  /* Signup Box */
+  .signup-box {
+    background: white;
+    border: 1px solid #dbdbdb;
+    padding: 40px;
+    text-align: center;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* App Name */
+  .app-name {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Signup Text */
+  .signup-text {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  /* Input Fields */
+  input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    font-size: 14px;
+    background: #f9f9f9;
+  }
+  
+  input:focus {
+    outline: none;
+    border: 1px solid #888;
+  }
+  
+  /* Signup Button */
+  .signup-btn {
+    width: 100%;
+    background: #0095f6;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .signup-btn:hover {
+    background: #0078e8;
+  }
+  
+  /* Terms Text */
+  .terms-text {
+    font-size: 12px;
+    color: #666;
+    margin-top: 10px;
+  }
+  
+  .terms-text span {
+    color: #0095f6;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .terms-text span:hover {
+    text-decoration: underline;
+  }
+  
+  /* Login Box */
+  .login-box {
+    background: white;
+    border: 1px solid #dbdbdb;
+    padding: 15px;
+    margin-top: 10px;
+    width: 350px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  .login-box p {
+    font-size: 14px;
+  }
+  
+  .login-box span {
+    color: #0095f6;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .login-box span:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive */
+  @media (max-width: 400px) {
+    .signup-box,
+    .login-box {
+      width: 90%;
+    }
+  }
+  

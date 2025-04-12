@@ -1,0 +1,31 @@
+.food-display {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #fff9f9, #f3f3f3);
+}
+
+.food-display h2 {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.food-display-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .food-display h2 {
+        font-size: 2rem;
+    }
+
+    .food-display-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}

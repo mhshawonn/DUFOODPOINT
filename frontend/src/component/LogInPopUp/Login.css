@@ -1,0 +1,159 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Login Container */
+  .login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #fafafa;
+  }
+  
+  /* Login Box */
+  .login-box {
+    background: white;
+    border: 1px solid #dbdbdb;
+    padding: 40px;
+    text-align: center;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* App Name */
+  .app-name {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: rgb(255, 0, 132);
+  }
+  .app-name:hover{
+    color:#0095f6;
+  }
+  
+  /* Input Fields */
+  input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    font-size: 14px;
+    background: #f9f9f9;
+  }
+  
+  input:focus {
+    outline: none;
+    border: 1px solid #888;
+  }
+  
+  /* Login Button */
+  .login-btn {
+    width: 100%;
+    background: #f60087;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .login-btn:hover {
+    background: #0078e8;
+  }
+  
+  /* Divider */
+  .divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0;
+    font-size: 14px;
+    color: #777;
+    position: relative;
+  }
+  
+  .divider::before,
+  .divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #dbdbdb;
+    margin: 0 10px;
+  }
+  
+  /* Login with Facebook */
+  .login-with-fb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #385185;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .login-with-fb:hover {
+    color: #2e4b83;
+  }
+  
+  .fb-icon {
+    margin-right: 8px;
+    font-size: 18px;
+  }
+  
+  /* Forgot Password */
+  .forgot-password {
+    color: #0095f6;
+    font-size: 14px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .forgot-password:hover {
+    text-decoration: underline;
+  }
+  
+  /* Signup Box */
+  .signup-box {
+    background: white;
+    border: 1px solid #dbdbdb;
+    padding: 15px;
+    margin-top: 10px;
+    width: 350px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  .signup-box p {
+    font-size: 14px;
+  }
+  
+  .signup-box span {
+    color: #0095f6;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .signup-box span:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive */
+  @media (max-width: 400px) {
+    .login-box,
+    .signup-box {
+      width: 90%;
+    }
+  }
+  

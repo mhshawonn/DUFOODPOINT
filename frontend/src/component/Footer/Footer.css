@@ -1,0 +1,113 @@
+/* Footer Styles */
+.footer {
+    background: #0f0f1a;
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* CTA Section */
+.footer-cta {
+    background: #f26b6b;
+    padding: 20px;
+    border-radius: 10px;
+    margin: -80px auto 30px auto;
+    text-align: center;
+    max-width: 800px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.footer-cta h2 {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+}
+
+.footer-cta p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.cta-button {
+    background: #1a1a1a;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background: #333;
+}
+
+/* Footer Content */
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: auto;
+    text-align: left;
+}
+
+.footer-section {
+    margin: 15px;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    font-size: 1.2rem;
+    color: #d22525;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section li {
+    margin-bottom: 8px;
+    color: #ccc;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.footer-section li:hover {
+    color: #fff;
+}
+
+/* Social Media */
+.social-icons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.social-icons svg {
+    background: #df5353;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.social-icons svg:hover {
+    background: #7a4bb6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+    }
+}

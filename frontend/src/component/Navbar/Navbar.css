@@ -1,0 +1,158 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: linear-gradient(135deg, #d5cfcf, #d2d2cd);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    height: 50px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(210, 98, 98);
+}
+
+.navbar-menu li {
+    cursor: pointer;
+    position: relative;
+    padding: 5px 0;
+}
+
+.navbar-menu li::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: -5px;
+    left: 50%;
+    background: rgb(11, 11, 11);
+    transition: all 0.3s ease-in-out;
+    transform: translateX(-50%);
+}
+
+.navbar-menu li:hover::after {
+    width: 100%;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar-right img {
+    width: 25px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.navbar-right img:hover {
+    transform: scale(1.2);
+}
+
+.search-icon {
+    position: relative;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background: red;
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+}
+
+/* Button Styling */
+button {
+    background: white;
+    color: #ff7e5f;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+    background: #ff7e5f;
+    color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Hamburger Menu for Mobile */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background: #333;
+    transition: 0.3s;
+}
+
+/* Open state */
+.bar.open:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.bar.open:nth-child(2) {
+    opacity: 0;
+}
+
+.bar.open:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        padding: 15px;
+        justify-content: space-between;
+    }
+    
+    .navbar-menu {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        display: none;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-menu.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+    .navbar-right{
+        display: none;
+    }
+}
